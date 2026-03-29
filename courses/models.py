@@ -43,3 +43,16 @@ class Submission(models.Model):
 
     def __str__(self):
         return f"{self.course.name} - Score: {self.score}"
+
+class Instructor(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+
+class Learner(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
