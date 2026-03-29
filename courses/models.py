@@ -36,7 +36,7 @@ class Choice(models.Model):
         return self.choice_text
 
 
-# ✅ Submission Model (IMPORTANT for marks)
+
 class Submission(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     score = models.IntegerField()
